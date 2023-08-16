@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Locadora 2000</title>
+    <!--link de icon arquivo de imagem-->
+    <link rel="icon" type="image/png" href="/img/img/icon.png"/>
+    <!--link de style arquivo css-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--link de Bootstrap--> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--link de javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <img class="me-3" src="./img/film.svg" alt="Locadora 2000"/>
+        <a class="navbar-brand" href="#topo">Locadora 2000</a>
+
+    <div class="collapse navbar-collapse" id="navBarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li>
+                <a class="nav-link active" aria-current="page" href="#tabfilmes">Filmes Disponíveis</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="dropGeneros" role="button" data-bs-toggle="dropdown" href="#drop" aria-expanded="false" >Filmes por Categorias</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#gacao">Ação</a></li>
+                    <li><a class="dropdown-item" href="#ganim">Animação</a></li>
+                    <li><a class="dropdown-item" href="#groman">Romance</a></li>
+                    <li><a class="dropdown-item" href="#gsus">Suspense</a></li>
+                </ul>
+                
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#cadfilmes">Cadastrar Filmes</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+ </nav> 
+ <h1 class="display-1 text-center mb-5 mt-3" id="topo">Locadora 2000</h1>
+ <div class="container">
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th scope="col" id="cod">Código</th>
+                <th scope="col" id="title">Titulo</th>
+                <th scope="col" id="director">Diretor</th>
+                <th scope="col" id="date">Lançamento</th>
+                <th scope="col" id="actor">Ator/Atriz Principal</th>
+                <th scope="col" id="imdb">IMDb</th>
+                <th scope="col" >Gêneros</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="text-center table-primary" colspan="8" id="gacao">Ação</th>
+            </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td scope="col" >Homen Aranha</td>
+                <td scope="col" >Sam Raimi</td>
+                <td scope="col" >17 de maio de 2002</td>
+                <td scope="col" >Tobey Maguire</td>
+                <td scope="col" >7,4</td>
+                <td scope="col" >Ação</td>
+                
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td scope="col">Comando para Matar</td>
+                <td scope="col">Mark L. Lester</td>
+                <td scope="col"> 4 de Outubro de 1985</td>
+                <td scope="col">Arnold Schwarzenegger</td>
+                <td scope="col">6,7</td>
+                <td scope="col">Ação e Aventura</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td scope="col">Indiana Jones e os Caçadores da Arca Perdida</td>
+                <td scope="col">Steven Spielberg</td>
+                <td scope="col">12 de junho de 1981</td>
+                <td scope="col">Harrison Ford</td>
+                <td scope="col">8,4</td>
+                <td scope="col">Ação, aventura e fantasia</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td scope="col">Mad Max 2</td>
+                <td scope="col">George Miller</td>
+                <td scope="col"> 5 de abril de 1982</td>
+                <td scope="col">Mel Gibson</td>
+                <td scope="col">7,6</td>
+                <td scope="col">Ação e Ficção Científica</td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td scope="col">O Exterminador do Futuro 2 - O Julgamento Final</td>
+                <td scope="col">James Cameron</td>
+                <td scope="col">3 de julho de 1991</td>
+                <td scope="col">Arnold Schwarzenegger</td>
+                <td scope="col">8,6</td>
+                <td scope="col">Ação e Ficção Científica</td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td scope="col">Robocop - O Polícia do Futuro</td>
+                <td scope="col">Paul Verhoeven</td>
+                <td scope="col">17 de Julho de 1987</td>
+                <td scope="col">Peter Weller</td>
+                <td scope="col">7,6</td>
+                <td scope="col">Ação e Ficção Científica</td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td scope="col">Máquina Mortífera</td>
+                <td scope="col">Richard Donner</td>
+                <td scope="col">6 de março de 1987</td>
+                <td scope="col">Mel Gibson e Danny Glover</td>
+                <td scope="col">7,6</td>
+                <td scope="col">Ação, Comédia e policial</td>
+            </tr>
+            <tr>
+                <th scope="row">8</th>
+                <td scope="col">Duro de Matar</td>
+                <td scope="col">John McTiernan</td>
+                <td scope="col">15 de Julho de 1988</td>
+                <td scope="col">Bruce Willis</td>
+                <td scope="col">8,2</td>
+                <td scope="col">Ação, Comédia e policial</td>
+            </tr>
+            <tr>
+                <th scope="row">9</th>
+                <td scope="col">Velozes e Furiosos</td>
+                <td scope="col">Rob Cohen</td>
+                <td scope="col">22 de junho de 2001</td>
+                <td scope="col">Vin Diesel e Paul Walker</td>
+                <td scope="col">6,8</td>
+                <td scope="col">Ação</td>
+            </tr>
+            <tr>
+                <th class="text-center table-primary" colspan="8" id="ganim">Animação</th>  
+            </tr>
+            <tr>
+                <th scope="row">10</th>
+                <td scope="col">Carros</td>
+                <td scope="col">John Lasseter</td>
+                <td scope="col">9 de Junho de 2006</td>
+                <td scope="col">Owen Wilson Lightning McQueen(narração)</td>
+                <td scope="col">7,2</td>
+                <td scope="col">Animação, Aventura e Comédia</td>
+            </tr>
+            <tr>
+                <th scope="row">11</th>
+                <td scope="col">Os Incríveis</td>
+                <td scope="col">Brad Bird</td>
+                <td scope="col">27 de outubro de 2004</td>
+                <td scope="col">Craig T. Nelson Bob Parr(narração)</td>
+                <td scope="col">8,0</td>
+                <td scope="col">Animação, Aventura e Comédia</td>
+            </tr>
+            <tr>
+                <th scope="row">12</th>
+                <td scope="col">Toy Story</td>
+                <td scope="col">John Lasseter</td>
+                <td scope="col">19 de novembro de 1995</td>
+                <td scope="col">Tom Hanks Woody(narração)</td>
+                <td scope="col">8,3</td>
+                <td scope="col">Animação, Aventura e Comédia</td>
+            </tr>
+            <tr>
+                <th scope="row">13</th>
+                <td scope="col">O Rei Leão</td>
+                <td scope="col">Roger Allers e Rob Minkoff</td>
+                <td scope="col">15 de junho de 1994</td>
+                <td scope="col">Matthew Broderick Simba(narração)</td>
+                <td scope="col">8,5</td>
+                <td scope="col">Animação, Aventura e Comédia</td>
+            </tr>
+            <tr>
+                <th scope="row">14</th>
+                <td scope="col">Shrek</td>
+                <td scope="col">Andrew Adamson e Vicky Jenson</td>
+                <td scope="col">18 de maio de 2001</td>
+                <td scope="col">Mike Myers Shrek(narração)</td>
+                <td scope="col">7,9</td>
+                <td scope="col">Animação, Aventura e Comédia</td>
+            </tr>
+            <tr>
+                <th scope="row">15</th>
+                <td scope="col">Kung Fu Panda</td>
+                <td scope="col">Mark Osborne e John Stevenson</td>
+                <td scope="col">6 de Junho de 2008</td>
+                <td scope="col">Jack Black Po(narração)</td>
+                <td scope="col">7,6</td>
+                <td scope="col">Animação, Aventura e Comédia</td>
+            </tr>
+            <tr>
+                <th scope="row">16</th>
+                <td scope="col">Procurando Nemo</td>
+                <td scope="col">Andrew Stanton</td>
+                <td scope="col">18 de maio de 2003</td>
+                <td scope="col">Albert Brooks Marlin(narração)</td>
+                <td scope="col">8,2</td>
+                <td scope="col">Animação, Aventura e Comédia</td>
+            </tr>
+            <tr>
+                <th class="text-center table-primary" colspan="8" id="groman">Romance</th>
+            </tr>
+            <tr>
+                <th scope="row">17</th>
+                <td scope="col">Cocktail </td>
+                <td scope="col">Roger Donaldson</td>
+                <td scope="col">2 de agosto de 1988</td>
+                <td scope="col">Tom Cruise</td>
+                <td scope="col">5,9</td>
+                <td scope="col">Romance e Comédia</td>
+            </tr>
+            <tr>
+                <th scope="row">18</th>
+                <td scope="col">Flashdance</td>
+                <td scope="col">Adrian Lyne</td>
+                <td scope="col">16 de setembro de 1983</td>
+                <td scope="col">Jennifer Beals</td>
+                <td scope="col">6,2</td>
+                <td scope="col">Romance e Musical</td>
+            </tr>
+            <tr>
+                <th scope="row">19</th>
+                <td scope="col">Top Gun - Ases Indomáveis</td>
+                <td scope="col">Tony Scott</td>
+                <td scope="col">16 de maio de 1986</td>
+                <td scope="col">Tom Cruise</td>
+                <td scope="col">6,9</td>
+                <td scope="col">Romance, Ação e Drama</td>
+            </tr>
+            <tr>
+                <th scope="row">20</th>
+                <td scope="col">O Feitiço de Áquila</td>
+                <td scope="col">Richard Donner</td>
+                <td scope="col">12 de abril de 1985</td>
+                <td scope="col">Matthew Broderick, Rutger Hauer e Michelle Pfeiffer</td>
+                <td scope="col">6,9</td>
+                <td scope="col">Romance, Aventura e Fantasia</td>
+            </tr>
+            <tr>
+                <th scope="row">21</th>
+                <td scope="col">Namorada de Aluguel</td>
+                <td scope="col">Steve Rash</td>
+                <td scope="col">14 de agosto de 1987</td>
+                <td scope="col">Patrick Dempsey e Amanda Peterson</td>
+                <td scope="col">6,8</td>
+                <td scope="col">Romance e Comédia</td>
+            </tr>
+            <tr>
+                <th scope="row">22</th>
+                <td scope="col">E Se Fosse Verdade</td>
+                <td scope="col">Mark Waters</td>
+                <td scope="col">16 de setembro de 2005</td>
+                <td scope="col">Reese Witherspoon e Mark Ruffalo </td>
+                <td scope="col">6,7</td>
+                <td scope="col">Romance e Comédia</td>
+            </tr>
+            <tr>
+                <th class="text-center table-primary" colspan="8" id="gsus">Suspense</th>
+            </tr>
+            <tr>
+                <th scope="row">23</th>
+                <td scope="col">Bala de Prata</td>
+                <td scope="col">Daniel Attias</td>
+                <td scope="col">11 de outubro de 1985</td>
+                <td scope="col">Gary Busey e Corey Haim</td>
+                <td scope="col">6,4</td>
+                <td scope="col">Suspense, Terror e Aventura</td>
+            </tr>
+            <tr>
+                <th scope="row">24</th>
+                <td scope="col">As Duas Faces de um Crime</td>
+                <td scope="col">Gregory Hoblit</td>
+                <td scope="col">3 de abril de 1996</td>
+                <td scope="col">Richard Gere e Edward Norton </td>
+                <td scope="col">7,7</td>
+                <td scope="col">Suspense</td>
+            </tr>
+            <tr>
+                <th scope="row">25</th>
+                <td scope="col">Risco Duplo</td>
+                <td scope="col">Bruce Beresford</td>
+                <td scope="col">24 de setembro de 1999</td>
+                <td scope="col">Ashley Judd</td>
+                <td scope="col">6,5</td>
+                <td scope="col">Suspense</td>
+            </tr>
+            <tr>
+                <th scope="row">26</th>
+                <td scope="col">A Morte Pede Carona</td>
+                <td scope="col">Robert Harmon</td>
+                <td scope="col">27 de Novembro de 1986</td>
+                <td scope="col">Rutger Hauer e C. Thomas Howell</td>
+                <td scope="col">7,2</td>
+                <td scope="col">Suspense, Drama, Ação e Terror</td>
+            </tr>
+            <tr>
+                <th scope="row">27</th>
+                <td scope="col">Dormindo com o Inimigo</td>
+                <td scope="col">Joseph Ruben</td>
+                <td scope="col">8 de fevereiro de 1991</td>
+                <td scope="col">Julia Roberts</td>
+                <td scope="col">6,2</td>
+                <td scope="col">Suspense, Drama</td>
+            </tr>
+            <tr>
+                <th scope="row">28</th>
+                <td scope="col">O Iluminado</td>
+                <td scope="col">Stanley Kubrick</td>
+                <td scope="col">23 de Maio de 1980</td>
+                <td scope="col">Jack Nicholson</td>
+                <td scope="col">8,4</td>
+                <td scope="col">Suspense, Drama e Terror</td>
+            </tr>
+            <tr>
+                <th scope="row">29</th>
+                <td scope="col">Tubarão</td>
+                <td scope="col">Steven Spielberg</td>
+                <td scope="col">20 de junho de 1975</td>
+                <td scope="col">Roy Scheider</td>
+                <td scope="col">8,1</td>
+                <td scope="col">Suspense, Drama e Aventura</td>
+            </tr>
+            <tr>
+                <th scope="row">30</th>
+                <td scope="col">Sobre Meninos e Lobos</td>
+                <td scope="col">Clint Eastwood</td>
+                <td scope="col">3 de outubro de 2003</td>
+                <td scope="col">Sean Penn, Tim Robbins e Kevin Bacon</td>
+                <td scope="col">7,9</td>
+                <td scope="col">Suspense, Drama e Policial</td>
+            </tr>
+
+            <tr id="insertRow"></tr>
+
+
+        </tbody>
+    </table>
+ </div>
+ <div class="mb-5 mt-5">
+    <hr class="border-primary border-3 opacity-75"/>
+ </div>
+ 
+ <div class="container mb-5"  id="cadfilmes">
+    <h2 class="text-center mb-4">Cadastro de Filmes</h2>
+
+    <form name="register" onsubmit="event.preventDefault()">
+        <!--? Cadastro  do Código e do Titulo-->
+        <div class="row">
+            <div class="mb-3 col">
+                <label for="codFilm" class="form-label">Código</label>
+                <input type="text" class="form-control" id="codFilm" name="cod"/>
+            </div>
+            <div class="mb-3 col">
+                <label for="titleFilm" class="form-label">Titulo</label>
+                <input type="text" class="form-control" id="titleFilm" name="title"/>
+            </div>
+        </div>
+       <!--? Cadastro do Diretor e do Lançamento-->
+       <div class="row">
+            <div class="mb-3 col">
+                <label for="directorFilm" class="form-label">Diretor</label>
+                <input type="text" class="form-control" id="directorFilm" name="director"/>
+            </div>
+        
+            <div class="mb-3 col">
+                <label for="yearFilm" class="form-label">Lançamento</label>
+                <input type="text" class="form-control" id="yearFilm" placeholder="DD de MM de AAAA" name="date"/>
+            </div>
+        </div>
+        <!--? Cadastro do Ator/Atriz principal e nota IMDb-->
+       <div class="row">
+        <div class="mb-3 col">
+            <label for="actorFilm" class="form-label">Ator/Atriz Principal</label>
+            <input type="text" class="form-control" id="ActorFilm" name="actor"/>
+        </div>
+    
+        <div class="mb-3 col">
+            <label for="imdbFilm" class="form-label">IMDb</label>
+            <input type="number" class="form-control" id="yearFilm" placeholder="Nota do IMDb" name="imdb"/>
+        </div>
+    </div>
+        <!--? Cadastro do Gênero-->
+        <p>Selecione o Gênero</p>
+        <div class="row mt-3">
+            <div class="col form-check ms-5">
+                <input type="radio" id="radioGAcao" name="radio" class="form-check-input" value="acao"/>
+                <label for="radioGAcao" class="form-label">Ação</label>
+            </div>
+            <div class="col form-check">
+                <input type="radio" id="radioGAnim" name="radio" class="form-check-input" value="animacao"/>
+                <label for="radioGAnim" class="form-label">Animação</label>
+            </div>
+            <div class="col form-check ms-5">
+                <input type="radio" id="radioGRoman" name="radio" class="form-check-input" value="romance"/>
+                <label for="radioGRoman" class="form-label">Romance</label>
+            </div>
+            <div class="col form-check">
+                <input type="radio" id="radioGSus" name="radio" class="form-check-input" value="suspense"/>
+                <label for="radioGSus" class="form-label">Suspense</label>
+            </div>
+        </div>
+
+        <!--? Botão de enviar-->
+        <div class="col-auto d-flex justify-content-center">
+            <button type="submit" onclick="validationForm(); insert()" class="btn btn-primary mt-3">Cadastrar</button>
+        </div>
+       
+    </form>
+ </div>
+
+</body>
+</html>
